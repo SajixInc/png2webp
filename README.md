@@ -29,6 +29,8 @@ Converting PNG images to WebP format can be beneficial for web development and o
 
 
      pip install pillow
+     
+     pip install webp
 # Usage
 1. Place your WebP images in the input directory.
 
