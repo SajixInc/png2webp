@@ -2,20 +2,25 @@ from PIL import Image
 import os
 
 # where the images are, that folder path
-path = " Images folder  path " # This is a folderpath
+path = r"C:\Users\LT-VFY-HP-112021-031\Pictures\test\Screenshot 2022-02-22 165322.png" # This is a folder path
 
 # where webp are have to be store
-outputpath = "storage path"   #output folderpath
+outputpath = r"C:\Users\LT-VFY-HP-112021-031\Pictures\test\Output"   #output folder path
 
-def bluk_converstion():
-    l = os.listdir(path)
-    for i in range(len(l)):
-        print(l[i])
-        png_image = Image.open(f'{path}\{l[i]}')
-        png_image.save(f'{outputpath}\{l[i]}.webp', "webp")
-def image_converstion():
+# For Bulk Conversion
+# --------------------------
+# def bluk_conversion():
+#     l = os.listdir(path)
+#     for i in range(len(l)):
+#         print(l[i])
+#         png_image = Image.open(f'{path}\{l[i]}')
+#         png_image.save(f'{outputpath}\{l[i]}.webp', "webp")
+# --------------------------
+
+# for single image conversion
+def image_conversion():
     png_image = Image.open(f'{path}')
     png_image.save(f'{outputpath}.webp', "webp")
 
-image_converstion()
+image_conversion()
 
