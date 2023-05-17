@@ -24,7 +24,7 @@ Converting PNG images to WebP format can be beneficial for web development and o
 # Installation
 1. Clone the repository:
 
-     git clone https://github.com/your-username/webp-converter.git
+     git clone https://github.com/vivifyhealthcare/png2webp.git
 2. Install the required dependencies:
 
 
